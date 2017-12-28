@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Live Stock Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://tusharv.github.io/LSA/js/jquery.min.js"></script>
+    <script src="https://tusharv.github.io/LSA/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://tusharv.github.io/LSA/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://tusharv.github.io/LSA/css/main.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://tusharv.github.io/LSA/js/main.js"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '277326742793192');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=277326742793192&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Media.net Logo" class="media-logo" src="./img/logo.png">
+            </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+                <h1>Live Stock Application <span class="glyphicon glyphicon-flash"></span></h1>
+        </div>
+    </div>
+
+    <div id="stock-table" class="container">
+        <div class="row" data-id="header">
+            <div class="col-sm-1  heading">
+                Name
+            </div>
+            <div class="col-sm-1 heading">
+                Price
+            </div>
+            <div class="col-sm-1 heading">
+                Change
+            </div>
+            <div class="col-sm-1 heading">
+                Min
+            </div>
+            <div class="col-sm-1 heading">
+                Max
+            </div>
+            <div class="col-sm-4 heading">
+                Chart
+            </div>
+            <div class="col-sm-3 heading">
+                Last Updated
+            </div>
+        </div>
+    </div>
+</body>
+</html>
