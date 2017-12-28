@@ -13,6 +13,10 @@
     "webpack"
   ],
   "author": "Tushar Vaghela",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tusharv/LSA.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.13.1",
