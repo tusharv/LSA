@@ -32,7 +32,12 @@ var isChartReady = false;
 * Create hook up events for WebSocket
 */
 $(document).ready(function(){
-    var ws = new WebSocket("ws://stocks.mnet.website");
+    try{
+        var ws = new WebSocket("ws://stocks.mnet.website");
+    }catch(err){
+        showError();
+    }
+    
 
     ws.onopen = function()
     {
@@ -213,4 +218,12 @@ function updateTime() {
 */
 function chartReady() {
     isChartReady = true;
+}
+
+/*
+* Function : showError
+*
+*/
+function showError(){
+    $('.alert').removeClass('hidden');
 }
